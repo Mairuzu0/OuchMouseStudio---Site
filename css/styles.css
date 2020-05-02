@@ -1,0 +1,160 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: #1b262c;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5rem;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #0f4c75;
+  color: #FFF;
+}
+
+.white-section {
+  background-color: #FFF;
+  color: #1b262c;
+}
+
+/*Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  width: 50%;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+/* Title */
+
+#about .container-fluid {
+  padding: 5% 15% 5%;
+  text-align: left;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.about-image {
+  width: 60%;
+}
+
+.flappy-screenshot {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Tools Section */
+#features {
+  position: relative;
+}
+
+.tools-box {
+  padding: 5%;
+}
+
+.tools-title {
+  font-size: 1.5rem;
+}
+
+.icon {
+  color: #bbe1fa;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #3282b8;
+}
+
+/* Projects Section */
+#projects {
+  background-color: ;
+}
+
+.projects-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {}
+
+.projects-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#press {
+  background-color: #bbe1fa;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5rem;
+}
+
+/* Footer */
+.sns-icons {
+  margin: 20px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+
+}
