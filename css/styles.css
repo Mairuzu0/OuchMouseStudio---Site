@@ -12,6 +12,10 @@ p {
   color: #1b262c;
 }
 
+#about p {
+  color: #bbe1fa;
+}
+
 /* Headings */
 .big-heading {
   font-family: 'Montserrat', sans-serif;
@@ -27,7 +31,7 @@ p {
 
 /* Containers */
 .container-fluid {
-  padding: 7% 15%;
+  padding: 5% 10%;
 }
 
 /* Sections */
@@ -43,11 +47,11 @@ p {
 
 /*Navigation Bar */
 .navbar {
-  padding: 0 0 4.5rem;
+
 }
 
 .navbar-brand {
-  width: 50%;
+width: 50%;
 }
 
 .nav-item {
@@ -61,10 +65,13 @@ p {
 }
 
 /* Title */
-
 #about .container-fluid {
-  padding: 5% 15% 5%;
+  padding: 5% 15%;
   text-align: left;
+}
+
+.column-2 {
+  text-align: center;
 }
 
 /* Download Buttons */
@@ -74,16 +81,42 @@ p {
 
 /* Title Image */
 .about-image {
-  width: 60%;
+  text-align: right;
+  width: 50%;
 }
 
+/* Images */
 .flappy-screenshot {
+  background: url("../images/FlappyFlamingo1.png");
+}
+.flappy-screenshot:hover {
+  background: url("../images/FlappyFlamingo2.png");
+}
+.cat-screenshot {
+  background: url("../images/Catformer1.png");
+}
+.cat-screenshot:hover {
+  background: url("../images/Catformer2.png");
+}
+
+.game-screenshot {
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
-  border-radius: 15px;
+  height: 0;
+  padding-top: 56.25%;
+  display: block;
+  border-radius: 20px;
+  transition: 0.8s ease;
+}
+.game-screenshot:hover {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
 }
 
 /* Tools Section */
-#features {
+#Tools {
   position: relative;
 }
 
@@ -106,7 +139,8 @@ p {
 
 /* Projects Section */
 #projects {
-  background-color: ;
+  background-color: #bbe1fa;
+  padding: 2% 15%;
 }
 
 .projects-image {
@@ -149,12 +183,14 @@ p {
 /* Footer */
 .sns-icons {
   margin: 20px;
+  color: black;
+}
+.sns-icons:hover {
+  opacity: 50%;
 }
 
 @media (max-width: 1028px) {
   #title {
     text-align: center;
   }
-
-
 }
