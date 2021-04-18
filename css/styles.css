@@ -51,7 +51,8 @@ p {
 }
 
 .navbar-brand {
-width: 50%;
+width: 40%;
+padding: 0;
 }
 
 .nav-item {
@@ -97,6 +98,12 @@ width: 50%;
 }
 .cat-screenshot:hover {
   background: url("../images/Catformer2.png");
+}
+.starEden-screenshot {
+  background: url("../images/StarEden1.png");
+}
+.starEden-screenshot:hover {
+  background: url("../images/StarEden2.png");
 }
 
 .game-screenshot {
