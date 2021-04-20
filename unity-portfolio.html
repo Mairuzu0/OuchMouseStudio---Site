@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Unity Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS StyleSheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/e9f3b3328a.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href=""><img class="navbar-brand" src="./images/OuchMouseLogoText2x.png" alt="Ouch Mouse Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Unity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">3D modelling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="white-section" id="projects">
+
+    <!-- 0 Flappy Flamingo -->
+    <div class="container-fluid">
+      <div class="game-screenshot flappy-screenshot"></div>
+      <a href="https://apps.apple.com/jp/app/flapping-flamingo/id1503024844?l=en">
+        <button type="button" class="btn btn-dark download-button"><i class="fab fa-apple"></i> Download</button>
+      </a><a href="https://play.google.com/store/apps/details?id=com.OuchMouse.FlappyFlamingo">
+        <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-google-play"></i> Download</button>
+      </a><a href="https://ouchmousestudio.itch.io/flappy-flamingo">
+        <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button>
+      </a>
+      <h3>Flappy Flamingo</h3>
+      <div class="text-left">
+        <p>This project was based on the popular game flappy bird.
+          I wanted to give the game a little more of an ambient feel through the music and art style.
+          The code involved in the game was fairly simple involving scrolling backgrounds and some basic physics to contorl the player.
+
+        </p>
+        <p>I wanted to release a game on the Apple store to learn about the process.</p>
+        <a href="https://github.com/ouchmousestudio/Flappy-Flamingo-Game">Game Code.</a>
+      </div>
+    </div>
+
+    <!-- 1 Catformer -->
+    <div class="container-fluid">
+      <div class="game-screenshot cat-screenshot"></div>
+      <a href="https://ouchmousestudio.itch.io/catformer">
+        <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button>
+      </a>
+      <h3>Catformer</h3>
+      <div class="text-left">
+        <p>This is a 2D platformer game with some basic physics.
+          I created a parallax background to add some depth.
+
+        </p>
+        <a href="https://github.com/ouchmousestudio/Cat-Platformer-Game">Game Code.</a>
+      </div>
+    </div>
+
+    <!-- 2 Star Eden -->
+    <div class="container-fluid">
+      <div class="game-screenshot starEden-screenshot"></div>
+      <a href="https://ouchmousestudio.itch.io/star-eden">
+        <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button>
+      </a>
+      <br>
+      <h3>Star Eden</h3>
+      <div class="text-left">
+        <p>Star Eden was created as an FPS game with some focus on the environemnts and the visual effects.
+          This involved creating the environments and tweaking the lightning and shaders.
+          Unity's shadergraph and VFX Graph were used to create the dissolve effect.
+          I wanted to use a pixellated type effect to match the low-poly style of the game better.
+          <br><br>
+          <p class="text-secondary">Unity Shader Graph pixellated dissolve shader.</p>
+          <a href="images/PDissolveShader.png"><img src="images/PDissolveShader.png" class="img-fluid rounded" alt="Responsive image"></a>
+          <br><br>
+          <p class="text-secondary">Unity VFX Graph pixellated upload particle effect.</p>
+          <a href="images/UploadVFXGraph.png"><img src="images/UploadVFXGraph.png" class="img-fluid rounded" alt="Responsive image"></a>
+        </p>
+        <a href="https://github.com/ouchmousestudio/AnimalFPS">Game Code.</a>
+        <br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ay6kvXIrENg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+  <section class="colored-section" id="cta">
+    <div class="container-fluid">
+
+      <h3 class=""></h3>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <a href="https://twitter.com/ouchmousestudio"><i class="sns-icons fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com/channel/UCizZXIOsvno87Krz8SUg95w/featured"><i class="sns-icons fab fa-youtube"></i></a>
+      <a href="https://github.com/ouchmousestudio"><i class="sns-icons fab fa-github"></i></a>
+      <a href="mailto:ouchmousestudio@gmail.com"><i class="sns-icons fas fa-envelope"></i></a>
+    </div>
+
+    <p>© Copyright 2021 Ouch Mouse Studio</p>
+
+  </footer>
+</body>
+
+</html>
