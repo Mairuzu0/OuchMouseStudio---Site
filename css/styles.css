@@ -31,7 +31,7 @@ p {
 
 /* Containers */
 .container-fluid {
-  padding: 5% 10%;
+  padding: 5% 5%;
 }
 
 /* Sections */
@@ -156,7 +156,9 @@ padding: 0;
   margin: 20px;
 }
 
-.carousel-item {}
+.carousel-item {
+
+}
 
 .projects-text {
   font-size: 3rem;
@@ -200,4 +202,14 @@ padding: 0;
   #title {
     text-align: center;
   }
+  .container-fluid {
+    padding: 5% 0;
+  }
+  .white-section {
+   padding: 0;
+  }
+  #projects {
+    padding: 2% 5%;
+  }
+
 }
