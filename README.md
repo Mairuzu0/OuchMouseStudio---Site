@@ -1,5 +1,5 @@
-Ouch Mouse Studio Website
+# Ouch Mouse Studio Website
 
-[Landing Page]: https://ouchmousestudio.github.io/OuchMouseStudio---Site/
+[Landing Page](https://ouchmousestudio.github.io/OuchMouseStudio---Site/)
 
-[Portfolio]: https://ouchmousestudio.github.io/OuchMouseStudio---Site/unity-portfolio.html
+[Portfolio](https://ouchmousestudio.github.io/OuchMouseStudio---Site/unity-portfolio.html)
