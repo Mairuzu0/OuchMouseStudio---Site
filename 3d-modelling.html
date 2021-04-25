@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Unity Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS StyleSheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/e9f3b3328a.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href=""><img class="navbar-brand" src="./images/OuchMouseLogoText2x.png" alt="Ouch Mouse Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="unity-portfolio.html">Unity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">3D modelling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="white-section" id="projects">
+
+    <!-- 0 Wormhole -->
+    <div class="container-fluid">
+      <h3>Wormhole Effect</h3>
+      <div class="text-left">
+        <p>This project was to create a womhole style effect similar to ones in Sci-Fi TV Shows.
+          The mesh is a basic cylinder using a bevel to seperate it into 32 segments.
+          It is rigged with a bendy bone so the end can be animated.
+          The shader looks quite complex in total, although it's made up of various procedural layers.</p>
+        <a href="images/BWormShader.png"><img src="images/BWormShader.png" class="img-fluid rounded" alt="Responsive image"></a>
+        <p class="text-secondary text-center">The whole shader.</p>
+        <a href="images/BWLightFlash.png"><img src="images/BWLightFlash.png" class="img-fluid rounded" alt="Responsive image"></a>
+        <p class="text-secondary text-center">Procedural light flash effect.</p>
+        <p>The layers are mixed with various blend modes to create the final effect.
+          Both the shaders and the animation use procedural effects.
+          The bone animation was animated using random noise in the graph.</p>
+        <a href="images/BWormAnim.png"><img src="images/BWormAnim.png" class="img-fluid rounded" alt="Responsive image"></a>
+        <p class="text-secondary text-center">Procedual Animation.</p>
+        <p>Below is a render of the final animation with some added sound effects.</p>
+        <div class="text-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/JlLM5UiXrco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></div>
+
+      </div>
+      <hr>
+      <!-- 1 Lord of Darkness -->
+      <div class="container-fluid">
+        <h3>Lord of Darkness</h3>
+        <div class="text-left">
+          <p>I wanted to create a rigged character. This design was inspired by the 1985 movie 'Legend'.
+            I didn't want to make an exact copy, but I felt some main features were important.
+            I started by blocking the character out into a basic shape and then sculpted a high poly version.
+          </p>
+          <a href="images/LoD1.png"><img src="images/LoD1.png" class="img-fluid rounded" alt="Responsive image"></a>
+          <p class="text-secondary text-center">Finished Character.</p>
+          <a href="images/LoD2.png"><img src="images/LoD2.png" class="img-fluid rounded" alt="Responsive image"></a>
+          <p class="text-secondary text-center">Front view showing rig.</p>
+          <a href="images/LoD3.png"><img src="images/LoD3.png" class="img-fluid rounded" alt="Responsive image"></a>
+          <p class="text-secondary text-center">Side view showing rig.</p>
+          <p>The high poly version was baked onto a lower poly model using normal maps, cavity maps and then various other texture maps were added.
+            I used one texture file for all of the models (clothing and jewelry) to limit the file size and amount of video RAM used.
+          </p>
+            <a href="images/LoDNorm.png"><img src="images/LoDNorm.png" class="img-fluid rounded" alt="Responsive image"></a>
+            <p class="text-secondary text-center">The normal map.</p>
+            <p>As animating a character can be quite difficult to look natural I used an animation from Mixamo.
+              I had to make adjusted to the armatures and doa  lot of manual weight painting for it to look more effective.
+            </p>
+          <p>Here is a short video of the model with a small animation and some simple Manta-Flow fluid simulation fire and smoke.</p>
+          <div class="text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iL1Hk625e0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+        </div>
+
+        <!-- 2 Project -->
+        <div class="container-fluid">
+
+        </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+  <section class="colored-section" id="cta">
+    <div class="container-fluid">
+
+      <h3 class=""></h3>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <a href="https://twitter.com/ouchmousestudio"><i class="sns-icons fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com/channel/UCizZXIOsvno87Krz8SUg95w/featured"><i class="sns-icons fab fa-youtube"></i></a>
+      <a href="https://ouchmousestudio.itch.io/"><i class="sns-icons fab fa-itch-io"></i></a>
+      <a href="https://github.com/ouchmousestudio"><i class="sns-icons fab fa-github"></i></a>
+      <a href="mailto:ouchmousestudio@gmail.com"><i class="sns-icons fas fa-envelope"></i></a>
+    </div>
+
+    <p>© Copyright 2021 Ouch Mouse Studio</p>
+
+  </footer>
+</body>
+
+</html>
