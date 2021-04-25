@@ -12,8 +12,24 @@ p {
   color: #1b262c;
 }
 
+hr {
+  width: 6%;
+  border: dotted #3282b8 6px;
+  border-bottom: none;
+  margin: 1% auto;
+}
+
 #about p {
   color: #bbe1fa;
+}
+
+/* Gist Code Snippets */
+.gist-file .gist-data {
+  max-height: 400px;
+}
+
+.gist .gist-data {
+  background-color: #f1f3f5;
 }
 
 /* Headings */
@@ -46,13 +62,11 @@ p {
 }
 
 /*Navigation Bar */
-.navbar {
-
-}
+.navbar {}
 
 .navbar-brand {
-width: 40%;
-padding: 0;
+  width: 40%;
+  padding: 0;
 }
 
 .nav-item {
@@ -90,18 +104,23 @@ padding: 0;
 .flappy-screenshot {
   background: url("../images/FlappyFlamingo1.png");
 }
+
 .flappy-screenshot:hover {
   background: url("../images/FlappyFlamingo2.png");
 }
+
 .cat-screenshot {
   background: url("../images/Catformer1.png");
 }
+
 .cat-screenshot:hover {
   background: url("../images/Catformer2.png");
 }
+
 .starEden-screenshot {
   background: url("../images/StarEden1.png");
 }
+
 .starEden-screenshot:hover {
   background: url("../images/StarEden2.png");
 }
@@ -116,6 +135,7 @@ padding: 0;
   border-radius: 20px;
   transition: 0.8s ease;
 }
+
 .game-screenshot:hover {
   background-size: contain;
   background-repeat: no-repeat;
@@ -156,9 +176,7 @@ padding: 0;
   margin: 20px;
 }
 
-.carousel-item {
-
-}
+.carousel-item {}
 
 .projects-text {
   font-size: 3rem;
@@ -194,6 +212,7 @@ padding: 0;
   margin: 20px;
   color: black;
 }
+
 .sns-icons:hover {
   opacity: 50%;
 }
@@ -202,14 +221,16 @@ padding: 0;
   #title {
     text-align: center;
   }
+
   .container-fluid {
     padding: 5% 0;
   }
+
   .white-section {
-   padding: 0;
+    padding: 0;
   }
+
   #projects {
     padding: 2% 5%;
   }
-
 }

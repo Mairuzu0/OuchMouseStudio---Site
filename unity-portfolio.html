@@ -59,8 +59,9 @@
       <div class="game-screenshot flappy-screenshot"></div>
       <a href="https://apps.apple.com/jp/app/flapping-flamingo/id1503024844?l=en">
         <button type="button" class="btn btn-dark download-button"><i class="fab fa-apple"></i> Download</button>
-      </a><a href="https://play.google.com/store/apps/details?id=com.OuchMouse.FlappyFlamingo">
-        <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-google-play"></i> Download</button>
+        <!-- Google Play store link was removed.
+        </a><a href="https://play.google.com/store/apps/details?id=com.OuchMouse.FlappyFlamingo">
+        <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-google-play"></i> Download</button> -->
       </a><a href="https://ouchmousestudio.itch.io/flappy-flamingo">
         <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button>
       </a>
@@ -68,14 +69,15 @@
       <div class="text-left">
         <p>This project was based on the popular game flappy bird.
           I wanted to give the game a little more of an ambient feel through the music and art style.
-          The code involved in the game was fairly simple involving scrolling backgrounds and some basic physics to contorl the player.
-
+          The code involved in the game was fairly simple involving scrolling backgrounds and some basic physics to control the player.
+          All assets in this game were created by me with a rain shader to add a lightweight distortion in the shape of raindrops,
+          that can still work well on a mobile platform.
         </p>
         <p>I wanted to release a game on the Apple store to learn about the process.</p>
-        <a href="https://github.com/ouchmousestudio/Flappy-Flamingo-Game"><button type="button" class="btn btn-outline-light download-button"><i class="fab fa-github"></i> Game code</button></a>
+        <a href="https://github.com/ouchmousestudio/Flappy-Flamingo-Game"><button type="button" class="btn btn-outline-light download-button"><i class="fab fa-github"></i> Project code</button></a>
       </div>
     </div>
-
+    <hr>
     <!-- 1 Catformer -->
     <div class="container-fluid">
       <div class="game-screenshot cat-screenshot"></div>
@@ -85,14 +87,15 @@
       <h3>Catformer</h3>
       <div class="text-left">
         <p>This is a 2D platformer game with some basic physics.
-          I created a parallax background to add some depth.
+          I created a parallax background to add some depth. The script below runs in the LateUpdate function.
+          <script src="https://gist.github.com/ouchmousestudio/3573694740e059e7b362a2be2c5f9a27.js"></script>
           I enhanced the visual with some trails and some glowing stars from the coin pickups.
-
+          There is a particle system spawned on the coin pickup with rotating and shrinking stars with slight bloom.
         </p>
-        <a href="https://github.com/ouchmousestudio/Cat-Platformer-Game"><button type="button" class="btn btn-outline-light download-button"><i class="fab fa-github"></i> Game code</button></a>
+        <a href="https://github.com/ouchmousestudio/Cat-Platformer-Game"><button type="button" class="btn btn-outline-light download-button"><i class="fab fa-github"></i> Project code</button></a>
       </div>
     </div>
-
+    <hr>
     <!-- 2 Star Eden -->
     <div class="container-fluid">
       <div class="game-screenshot starEden-screenshot"></div>
@@ -104,17 +107,47 @@
       <div class="text-left">
         <p>Star Eden was created as an FPS game with some focus on the environments and the visual effects.
           This involved creating the environments and tweaking the lightning and shaders.
+          I did the level design, coding and some 3D modelling in this project.
+          The low poly animals were a 3rd party asset, but the animations were slightly edited and the shaders were replaced.
+          The player, hand, weapons and pickups were all modelled, rigged and animated by myself.
+        </p>
+        <p>The guns use a particle system connected to a script that detects for various collisions.
+          The 'EmitHitFX' and 'EmitHitEnemyFX' are used to create a visual effect feedback on the hits.
+          The code shown below shows a few of the functions used.</p>
+        <script src="https://gist.github.com/ouchmousestudio/7c750517b4bb2625978b1e0229c79991.js"></script>
+        <p>
           Unity's shadergraph and VFX Graph were used to create the dissolve effect.
           I wanted to use a pixellated type effect to match the low-poly style of the game better.
-          <br><br>
-          <p class="text-secondary">Unity Shader Graph pixellated dissolve shader.</p>
-          <a href="images/PDissolveShader.png"><img src="images/PDissolveShader.png" class="img-fluid rounded" alt="Responsive image"></a>
-          <br><br>
-          <p class="text-secondary">Unity VFX Graph pixellated upload particle effect.</p>
-          <a href="images/UploadVFXGraph.png"><img src="images/UploadVFXGraph.png" class="img-fluid rounded" alt="Responsive image"></a>
+          <br>Below are screenshots of the two main VFX used to generate these effects.
         </p>
-        <a href="https://github.com/ouchmousestudio/AnimalFPS"><button type="button" class="btn btn-outline-light download-button"><i class="fab fa-github"></i> Game code</button></a>
         <br><br>
+        <a href="images/PDissolveShader.png"><img src="images/PDissolveShader.png" class="img-fluid rounded" alt="Responsive image"></a>
+        <p class="text-secondary text-center">Unity Shader Graph pixellated dissolve shader.</p>
+        <br><br>
+        <a href="images/UploadVFXGraph.png"><img src="images/UploadVFXGraph.png" class="img-fluid rounded" alt="Responsive image"></a>
+        <p class="text-secondary text-center">Unity VFX Graph pixellated upload particle effect.</p>
+        <br><br>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p>The project's sound was created in Wwise.
+                <br>
+                I used a state system for different footsteps on different ground materials, triggered from colliders.
+                Alive and death also used a state system to change the music on a death event.
+                The music was made in layers so it could be randomized in Wwise to create a more dynamic sound,
+                with more triggers for the boss fights.
+              </p>
+            </div>
+            <div class="col-sm">
+              <a href="images/WwiseStates.png"><img src="images/WwiseStates.png" class="img-fluid rounded" alt="Responsive image"></a>
+              <p class="text-secondary text-center">Wwise switches and states.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://github.com/ouchmousestudio/AnimalFPS"><button type="button" class="btn btn-outline-light download-button"><i class="fab fa-github"></i> Project code</button></a>
+        <br><br>
+        <p class="text-secondary">Video of some gameplay.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ay6kvXIrENg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
