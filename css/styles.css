@@ -1,6 +1,5 @@
 body {
   font-family: "Montserrat";
-  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,8 +18,16 @@ hr {
   margin: 1% auto;
 }
 
+footer {
+  text-align: center;
+}
+
 #about p {
   color: #bbe1fa;
+}
+
+.resume {
+  text-align:left;
 }
 
 /* Gist Code Snippets */

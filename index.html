@@ -34,7 +34,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
@@ -51,54 +51,53 @@
   </section>
 
   <!-- Projects -->
-  <section class="white-section" id="projects">
+  <section class="white-section text-center" id="projects">
 
-    <div id="projects-carousel" class="carousel slide" data-ride="false">
-      <ol class="carousel-indicators">
-        <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#projects-carousel" data-slide-to="1"></li>
-        <li data-target="#projects-carousel" data-slide-to="2"></li>
-      </ol>
+    <div id="projects-carousel" class="carousel slide" data-bs-ride="false">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#projects-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#projects-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#projects-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
 
         <!-- 0 Flappy Flamingo -->
         <div class="carousel-item active container-fluid">
           <div class="game-screenshot flappy-screenshot"></div>
           <a href="https://apps.apple.com/jp/app/flapping-flamingo/id1503024844?l=en">
-            <button type="button" class="btn btn-dark download-button"><i class="fab fa-apple"></i> Download</button>
-          </a><a href="https://play.google.com/store/apps/details?id=com.OuchMouse.FlappyFlamingo">
-            <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-google-play"></i> Download</button>
-          </a><a href="https://ouchmousestudio.itch.io/flappy-flamingo">
-            <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button>
-          </a>
+            <button type="button" class="btn btn-dark download-button"><i class="fab fa-apple"></i> Download</button></a>
+          <a href="https://play.google.com/store/apps/details?id=com.OuchMouse.FlappyFlamingo">
+            <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-google-play"></i> Download</button></a>
+          <a href="https://ouchmousestudio.itch.io/flappy-flamingo">
+            <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button></a>
+
         </div>
 
         <!-- 1 Catformer -->
         <div class="carousel-item container-fluid">
           <div class="game-screenshot cat-screenshot"></div>
           <a href="https://ouchmousestudio.itch.io/catformer">
-            <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button>
-          </a>
+            <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button></a>
         </div>
 
         <!-- 2 Star Eden -->
         <div class="carousel-item container-fluid">
           <div class="game-screenshot starEden-screenshot"></div>
           <a href="https://ouchmousestudio.itch.io/star-eden">
-            <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button>
-          </a>
+            <button type="button" class="btn btn-outline-dark download-button"><i class="fab fa-itch-io"></i> Play on itch.io</button></a>
         </div>
       </div>
 
       <!-- Carousel Controls -->
-      <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
   </section>
@@ -122,7 +121,7 @@
   </section>
 
   <!-- Tools -->
-  <section class="white-section" id="tools">
+  <section class="white-section text-center" id="tools">
     <div class="container-fluid">
 
       <div class="row">
